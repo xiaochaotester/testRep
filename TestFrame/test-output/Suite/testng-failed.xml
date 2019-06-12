@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="com.selenium.reRunTest.ReRunTestListener"/>
+    <listener class-name="com.selenium.screenShot.TestScreenShot"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="com.selenium.pageObject.test.TestLogin">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
+          <include name="afterSuite"/>
+          <include name="test" invocation-numbers="0 0 0"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- com.selenium.pageObject.test.TestLogin -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
